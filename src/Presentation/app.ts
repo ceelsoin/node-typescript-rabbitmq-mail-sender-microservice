@@ -16,7 +16,7 @@ const mailService = bootstrapper.get<IMailService>(TYPES.IMailService);
 
 const app = () => {
   //Register services to run
-  console.log(' [ * ] Iniciando serviço de envio de e-mail.')
+  console.log(' [ * ] Initializing service...')
   mailService.ReceiveCallAndSendMailAsync();
 }
 
